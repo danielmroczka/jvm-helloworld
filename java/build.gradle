@@ -1,0 +1,9 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+jar.manifest.attributes('Main-Class': 'Main')
