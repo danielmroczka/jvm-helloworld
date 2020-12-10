@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'dm.labs.jvmhelloworld'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":java")
+    implementation project(":kotlin")
+    implementation project(":groovy")
+    implementation project(":scala")
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
